@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Login Page</title>
+</head>
+<body>
+    <h3 id="output"></h3>
+    <center>
+        <div id="Container">
+   <h2>Secure Login</h2><br>
+   <input type="text" name="Username" id="Username"><br><p></p>
+   <input type="password" name="password" id="password"><br><p></p>
+   <button onclick="LogIn()" id="LogInBtn">Log In</button> 
+    </center>
+        </div>
+</body>
+<script>
+
+var output = document.getElementById('output');
+var LoginBtn = document.getElementById("LogInBtn");
+var password = document.getElementById("password");
+var Username = document.getElementById("Username");
+    function LogIn(){
+    
+            if(password.value == "723d505516e0c197e42a6be3c0af910e" && Username.value == "admin"){
+
+                 document.write(`<h1>Confidential Content!!!!!!!!!!!!</h1>`);
+
+            }else{
+
+                output.innerHTML = "Password isn't correct: " + password.value; 
+
+            }
+
+    
+    }
+</script>
+<style>
+
+#Container{
+
+    margin-top: 30vh;
+
+}
+
+input{
+
+    width: 50vw;
+    height: 3vh;
+
+}
+
+button{
+
+    width: 50vw;
+    height: 5vh;
+    font-size: 3vh;
+    background-color: black;
+    color: white;
+
+}
+
+</style>
+</html>
