@@ -11,7 +11,7 @@
     <center>
         <div id="Container">
    <h2>Secure Login</h2><br>
-   <form action="javascript:LogIn()" method="post">
+   <form action="javascript:LogIn()" id="LogInSubmit">
    <input type="text" name="Username" id="Username" required><br><p></p>
    <input type="password" name="password" id="password" required><br><p></p>
    <input type="submit" id="LogInBtn" value="Log In">
@@ -23,6 +23,7 @@
 
 var output = document.getElementById('output');
 var LoginBtn = document.getElementById("LogInBtn");
+var LogInSubmit = document.getElementById("LogInSubmit");
 var password = document.getElementById("password");
 var Username = document.getElementById("Username");
     function LogIn(){
