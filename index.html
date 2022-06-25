@@ -11,10 +11,12 @@
     <center>
         <div id="Container">
    <h2>Secure Login</h2><br>
-   <input type="text" name="Username" id="Username"><br><p></p>
-   <input type="password" name="password" id="password"><br><p></p>
-   <button onclick="LogIn()" id="LogInBtn">Log In</button> 
-    </center>
+   <form action="javascript:LogIn()" method="post">
+   <input type="text" name="Username" id="Username" required><br><p></p>
+   <input type="password" name="password" id="password" required><br><p></p>
+   <input type="submit" id="LogInBtn" value="Log In">
+    </form>    
+</center>
         </div>
 </body>
 <script>
@@ -53,7 +55,7 @@ input{
 
 }
 
-button{
+#LogInBtn{
 
     width: 50vw;
     height: 5vh;
