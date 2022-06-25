@@ -7,14 +7,14 @@
     <title>Secure Login Page</title>
 </head>
 <body>
-    <h3 id="output"></h3>
     <center>
         <div id="Container">
    <h2>Secure Login</h2><br>
    <form action="javascript:LogIn()" id="LogInSubmit">
    <input type="text" name="Username" id="Username" required><br><p></p>
    <input type="password" name="password" id="password" required><br><p></p>
-   <input type="submit" id="LogInBtn" value="Log In">
+       <input type="submit" id="LogInBtn" value="Log In"><p></p>
+           <h4 id="output"></h4>
     </form>    
 </center>
         </div>
@@ -34,7 +34,7 @@ var Username = document.getElementById("Username");
 
             }else{
             
-                alert("Password/Username are not correct");
+                output.innerHTML = "Password/Username are not correct";
             
             }
 
